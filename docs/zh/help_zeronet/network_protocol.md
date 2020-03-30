@@ -15,22 +15,22 @@
 
 参数                 | 描述
                  --- | ---
-**crypt**            | Null/None, only used in respones
-**crypt_supported**  | An array of connection encryption methods supported by the client
-**fileserver_port**  | The client's fileserver port
-**onion**            | (Only used on tor) The client's onion address
-**protocol**         | The protocol version the client uses (v1 or v2)
-**port_opened**      | The client's client port open status
-**peer_id**          | (Not used on tor) The client's peer_id
-**rev**              | The client's revision number
-**version**          | The client's version
-**target_ip**        | The server's network address
+**crypt**            | Null/None, 仅用于响应
+**crypt_supported**  | 客户端支持的一系列连接加密方法
+**fileserver_port**  | 客户端的文件服务器端口
+**onion**            | （仅用于tor）客户的洋葱地址
+**protocol**         | 客户端使用的协议版本（v1或v2）
+**port_opened**      | 客户端的客户端端口打开状态
+**peer_id**          | （未在tor上使用）客户端的peer_id
+**rev**              | 客户的修订号
+**version**          | 客户端版本
+**target_ip**        | 服务器的网络地址
 
-The target initialize the encryption on the socket based on `crypt_supported`, then return:
+目标基于“crypt_supported”在套接字上初始化加密，然后return：
 
 返回键               | 描述
                  --- | ---
-**crypt**            | The encryption to use
+**crypt**            | 要使用的加密
 **crypt_supported**  | An array of connection encryption methods supported by the server
 **fileserver_port**  | The server's fileserver port
 **onion**            | (Only used on tor) The server's onion address
